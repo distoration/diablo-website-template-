@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/scripts/core.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Creepster&family=Fira+Sans:wght@900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body onload="typing()">
+    
+
+
+<div class="container-fluid">
+
+    <div id="demo-1"><h1 class="font-effect-fire">Diablo II: Resurrected</h1></div>
+    </div>
+
+    <div id="app"></div>
+
+
+    <div class="age-confirm-ask">
+        Are you over 18 years old?
+    </div>
+
+    <div class="age-confirm-buttons">
+        <button onclick="myFunction()" id="yes" class="btn danger"><p class="button-text">Yes</p></button>
+        <button onclick="myFunction()" id="no" class="btn danger"><p class="button-text">No</p></button>
+    </div>
+    
+
+
+
+
+    <style>
+        .footer {
+          position: relative;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: #111;
+          color: white;
+          text-align: center;
+        }
+    </style>
+        
+        <div id="demo-2"><p class="font-effect-fire1">powered by dist</p></div>
+
+
+
+
+
+<!--- JAVA SCRIPTE ZONE -->
+<!-- buttons hrefs -->
+
+<script type="text/javascript">
+    document.getElementById("yes").onclick = function () {
+        location.href = "./htmls/main.html";
+    };
+</script>
+
+<script type="text/javascript">
+    document.getElementById("no").onclick = function () {
+        location.href = "https://www.google.com/";
+    };
+</script>
+
+
+<script>
+    function typing() {
+
+    var i = 0;
+    var txt = 'The lord of destruction is back....'; 
+    /* The text */
+    var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+        document.getElementById("demo-1").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        }}  typeWriter() 
+
+        typing1()
+    }
+
+
+
+
+    function typing1() {  
+
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('The lord is coming..')
+        .pauseFor(2500)
+        .deleteAll()
+        .typeString('The death is close to us...')
+        .pauseFor(2500)
+        .deleteChars(7)
+        .typeString('<strong>The war is now</strong>')
+        .pauseFor(2500)
+        .start();
+    }  
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
